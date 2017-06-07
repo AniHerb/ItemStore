@@ -1,9 +1,6 @@
 package ua.itemstore.enums;
 
-/**
- * Created by xnx_ on 01.06.2017.
- */
-public enum  BookStatusEnum {
+public enum StatusEnum {
     CREATED,ERROR;
 
     private String error = null;

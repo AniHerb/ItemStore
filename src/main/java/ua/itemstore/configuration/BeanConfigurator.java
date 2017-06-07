@@ -12,9 +12,6 @@ import ua.itemstore.dao.ItemStoreDAOImpl;
 import ua.itemstore.services.ItemStoreService;
 import ua.itemstore.services.ItemStoreServiceImpl;
 
-/**
- * Created by xnx_ on 01.06.2017.
- */
 @Configuration
 @EnableTransactionManagement
 @EnableAspectJAutoProxy

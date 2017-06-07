@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - hibernate-hello@localhost" uuid="23038624-4c89-44d1-9710-a5244de9b03a">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>hibernate-hello.*</schema-pattern>
+      <default-schemas>hibernate-hello.*</default-schemas>
+    </data-source>
+  </component>
+</project>

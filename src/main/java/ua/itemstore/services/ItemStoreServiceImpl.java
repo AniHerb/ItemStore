@@ -4,13 +4,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import ua.itemstore.dao.ItemStoreDAO;
 import ua.itemstore.domains.Book;
-import ua.itemstore.enums.BookStatusEnum;
+import ua.itemstore.domains.BookConsumer;
+import ua.itemstore.domains.BookSupplier;
+import ua.itemstore.domains.BookSupplyOperation;
+import ua.itemstore.enums.StatusEnum;
 
 import java.util.Set;
 
-/**
- * Created by xnx_ on 01.06.2017.
- */
 public class ItemStoreServiceImpl implements ItemStoreService{
 
     @Autowired
@@ -18,12 +18,13 @@ public class ItemStoreServiceImpl implements ItemStoreService{
 
     @Override
     @Transactional
-    public BookStatusEnum createBook(Book book) {
+    public StatusEnum createBook(Book book) {
         return itemStoreDAO.createBook(book);
     }
 
     @Override
     @Transactional
+    //// TODO: 06.06.2017 createIntegrarionTest
     public boolean checkIfExistBook(Book book) {
         Set<Book> booksFromDB = itemStoreDAO.getBooksByBook(book);
         if (booksFromDB.isEmpty()) {
@@ -31,8 +32,23 @@ public class ItemStoreServiceImpl implements ItemStoreService{
         }else{
             return true;
         }
+    }
 
+    @Override
+    @Transactional
+    public StatusEnum createSupplier(BookSupplier bookSupplier) {
+        return itemStoreDAO.createSupplier(bookSupplier);
+    }
 
+    @Override
+    @Transactional
+    public StatusEnum createBookConsumer(BookConsumer bookConsumer) {
+        return itemStoreDAO.createBookConsumer(bookConsumer);
+    }
 
+    @Override
+    @Transactional
+    public StatusEnum createOperationBookSupply(BookSupplyOperation bookSupplyOperation) {
+        return itemStoreDAO.createOperationBookSupply(bookSupplyOperation);
     }
 }

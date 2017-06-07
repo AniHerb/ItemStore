@@ -1,35 +1,34 @@
 package ua.itemstore.domains;
 
-        import javax.persistence.Column;
-        import javax.persistence.Entity;
-        import javax.persistence.Id;
-        import javax.persistence.Table;
+        import com.sun.istack.internal.NotNull;
+
+        import javax.persistence.*;
         import java.util.Date;
 
-/**
- * Created by xnx_ on 10.02.2017.
- */
 @Entity
-@Table(name = "book")
+@Table(name = "book",uniqueConstraints=
+@UniqueConstraint(columnNames={"name", "autuhors"}))
 public class Book {
 
     @Id
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "name")
+    @Column(name = "name",nullable = false)
+    @NotNull
     private String name;
 
     @Column(name = "date")
     private Date date;
 
-    @Column(name = "autuhors")
+    @Column(name = "autuhors",nullable = false)
     private String autuhors;
 
     @Column(name = "iosn")
     private String IOSN;
 
     public Book() {
+        //TODO avoid costyl with generateID;
         this.id = System.currentTimeMillis();
     }
 
