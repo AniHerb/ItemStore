@@ -51,4 +51,16 @@ public class ItemStoreServiceImpl implements ItemStoreService{
     public StatusEnum createOperationBookSupply(BookSupplyOperation bookSupplyOperation) {
         return itemStoreDAO.createOperationBookSupply(bookSupplyOperation);
     }
+
+    @Override
+    @Transactional
+    public Book getBookByID(Long id) {
+        return itemStoreDAO.getBookByID(id);
+    }
+
+    @Override
+    @Transactional
+    public BookSupplyOperation getBookSupplyOperationByID(Long id) {
+        return itemStoreDAO.getBookSupplyOperationByID(id);
+    }
 }

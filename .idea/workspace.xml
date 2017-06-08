@@ -2,32 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f6d2d98-4e71-4939-999e-bfb9036beb18" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/itemstore/domains/BookConsumer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/itemstore/domains/BookOperationType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/itemstore/domains/BookSupplier.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/itemstore/domains/BookSupplyOperation.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ua/itemstore/enums/BookStatusEnum.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/itemstore/configuration/ArchitectureConfiguaration.class" afterPath="$PROJECT_DIR$/target/classes/ua/itemstore/configuration/ArchitectureConfiguaration.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/itemstore/configuration/BeanConfigurator.class" afterPath="$PROJECT_DIR$/target/classes/ua/itemstore/configuration/BeanConfigurator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/itemstore/controllers/BookController.class" afterPath="$PROJECT_DIR$/target/classes/ua/itemstore/controllers/BookController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/itemstore/controllers/BookControllerImpl.class" afterPath="$PROJECT_DIR$/target/classes/ua/itemstore/controllers/BookControllerImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/itemstore/dao/ItemStoreDAO.class" afterPath="$PROJECT_DIR$/target/classes/ua/itemstore/dao/ItemStoreDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/itemstore/dao/ItemStoreDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/ua/itemstore/dao/ItemStoreDAOImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/itemstore/domains/Book.class" afterPath="$PROJECT_DIR$/target/classes/ua/itemstore/domains/Book.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/itemstore/domains/BookConsumer.class" afterPath="$PROJECT_DIR$/target/classes/ua/itemstore/domains/BookConsumer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/itemstore/domains/BookOperationType.class" afterPath="$PROJECT_DIR$/target/classes/ua/itemstore/domains/BookOperationType.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/itemstore/domains/BookSupplier.class" afterPath="$PROJECT_DIR$/target/classes/ua/itemstore/domains/BookSupplier.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/itemstore/domains/BookSupplyOperation.class" afterPath="$PROJECT_DIR$/target/classes/ua/itemstore/domains/BookSupplyOperation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/itemstore/enums/StatusEnum.class" afterPath="$PROJECT_DIR$/target/classes/ua/itemstore/enums/StatusEnum.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/itemstore/services/ItemStoreService.class" afterPath="$PROJECT_DIR$/target/classes/ua/itemstore/services/ItemStoreService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/itemstore/services/ItemStoreServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/ua/itemstore/services/ItemStoreServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/test/itemstore/Instruments.class" afterPath="$PROJECT_DIR$/target/test-classes/test/itemstore/Instruments.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/test/itemstore/ItemStoreTestCase.class" afterPath="$PROJECT_DIR$/target/test-classes/test/itemstore/ItemStoreTestCase.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/itemstore/configuration/BeanConfigurator.java" afterPath="$PROJECT_DIR$/src/main/java/ua/itemstore/configuration/BeanConfigurator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/itemstore/configuration/ArchitectureConfiguaration.java" afterPath="$PROJECT_DIR$/src/main/java/ua/itemstore/configuration/ArchitectureConfiguaration.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/itemstore/controllers/BookController.java" afterPath="$PROJECT_DIR$/src/main/java/ua/itemstore/controllers/BookController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/itemstore/controllers/BookControllerImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ua/itemstore/controllers/BookControllerImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/itemstore/dao/ItemStoreDAO.java" afterPath="$PROJECT_DIR$/src/main/java/ua/itemstore/dao/ItemStoreDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/itemstore/dao/ItemStoreDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ua/itemstore/dao/ItemStoreDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/itemstore/domains/Book.java" afterPath="$PROJECT_DIR$/src/main/java/ua/itemstore/domains/Book.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/itemstore/domains/BookConsumer.java" afterPath="$PROJECT_DIR$/src/main/java/ua/itemstore/domains/BookConsumer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/itemstore/services/ItemStoreService.java" afterPath="$PROJECT_DIR$/src/main/java/ua/itemstore/services/ItemStoreService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/itemstore/services/ItemStoreServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ua/itemstore/services/ItemStoreServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/settings.properties" afterPath="$PROJECT_DIR$/src/main/resources/settings.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/test/itemstore/ItemStoreTestCase.java" afterPath="$PROJECT_DIR$/src/test/java/test/itemstore/ItemStoreTestCase.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/settings.properties" afterPath="$PROJECT_DIR$/target/classes/settings.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ua/itemstore/enums/BookStatusEnum.java" afterPath="$PROJECT_DIR$/src/main/java/ua/itemstore/enums/StatusEnum.java" />
     </list>
     <ignored path="ItemStore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,7 +67,117 @@
     <favorites_list name="ItemStore" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ItemStoreTestCase.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/test/itemstore/ItemStoreTestCase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5263158">
+              <caret line="122" column="9" selection-start-line="122" selection-start-column="9" selection-end-line="122" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArchitectureConfiguaration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/configuration/ArchitectureConfiguaration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.1923077">
+              <caret line="101" column="31" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/controllers/BookController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookControllerImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/controllers/BookControllerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="61" column="46" selection-start-line="61" selection-start-column="46" selection-end-line="61" selection-end-column="46" />
+              <folding>
+                <element signature="e#1691#1692#0" expanded="true" />
+                <element signature="e#1746#1747#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemStoreService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/services/ItemStoreService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemStoreServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/services/ItemStoreServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemStoreDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/dao/ItemStoreDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemStoreDAOImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/dao/ItemStoreDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+              <folding>
+                <element signature="e#1765#1766#0" expanded="true" />
+                <element signature="e#1826#1827#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="import_data.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/import_data.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="97" selection-start-line="2" selection-start-column="90" selection-end-line="2" selection-end-column="97" />
+              <folding>
+                <marker date="1496947138402" expanded="true" signature="139:281" placeholder="INSERT INTO `hibernate-hello`.`book_supplier`... " />
+                <marker date="1496947138402" expanded="true" signature="283:400" placeholder="INSERT INTO `hibernate-hello`.`book_supplier_operation`... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -90,26 +204,27 @@
         <option value="$PROJECT_DIR$/src/main/java/ua/test/itemstore/ItemStoreTestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/itemstore/ItemStoreTestCase.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/itemstore/enums/BookStatusEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/itemstore/configuration/ArchitectureConfiguaration.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/itemstore/domains/BookOperation.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/23038624-4c89-44d1-9710-a5244de9b03a/console.sql" />
         <option value="dbtable:/9f0158f8/23038624-4c89-44d1-9710-a5244de9b03a/hibernate-hello.book_supplier_operation" />
-        <option value="$PROJECT_DIR$/src/main/resources/settings.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/test/itemstore/ItemStoreTestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/itemstore/Instruments.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/itemstore/services/ItemStoreServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/itemstore/services/ItemStoreService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/itemstore/enums/StatusEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/itemstore/domains/BookSupplyOperation.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/itemstore/domains/BookSupplier.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/itemstore/domains/BookOperationType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/itemstore/domains/BookConsumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/itemstore/domains/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/itemstore/dao/ItemStoreDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/itemstore/dao/ItemStoreDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/itemstore/controllers/BookControllerImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/itemstore/controllers/BookController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/itemstore/configuration/BeanConfigurator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/itemstore/configuration/ArchitectureConfiguaration.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/settings.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/itemstore/domains/BookConsumer.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/import_data.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/itemstore/controllers/BookController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/itemstore/controllers/BookControllerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/itemstore/services/ItemStoreService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/itemstore/dao/ItemStoreDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/itemstore/dao/ItemStoreDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/itemstore/ItemStoreTestCase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/itemstore/services/ItemStoreServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -171,6 +286,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -419,9 +535,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -442,33 +557,7 @@
       <recent name="ua.itemstore.enums" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ItemStoreTestCase">
-    <configuration default="false" name="ItemStoreTestCase.testCreateBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test.itemstore.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ItemStore" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test.itemstore" />
-      <option name="MAIN_CLASS_NAME" value="test.itemstore.ItemStoreTestCase" />
-      <option name="METHOD_NAME" value="testCreateBook" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ItemStoreTestCase.searchBookOperationByID">
     <configuration default="false" name="ItemStoreTestCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -495,58 +584,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="ItemStoreTestCase.testCheckDuplicateCreateBookName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test.itemstore.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ItemStore" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test.itemstore" />
-      <option name="MAIN_CLASS_NAME" value="test.itemstore.ItemStoreTestCase" />
-      <option name="METHOD_NAME" value="testCheckDuplicateCreateBookName" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ItemStoreTestCase.testNotNullForBookFieldName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test.itemstore.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ItemStore" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test.itemstore" />
-      <option name="MAIN_CLASS_NAME" value="test.itemstore.ItemStoreTestCase" />
-      <option name="METHOD_NAME" value="testNotNullForBookFieldName" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="ItemStoreTestCase.testNotNullForBookFieldAuthor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -560,6 +597,84 @@
       <option name="PACKAGE_NAME" value="test.itemstore" />
       <option name="MAIN_CLASS_NAME" value="test.itemstore.ItemStoreTestCase" />
       <option name="METHOD_NAME" value="testNotNullForBookFieldAuthor" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ItemStoreTestCase.t" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.itemstore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ItemStore" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test.itemstore" />
+      <option name="MAIN_CLASS_NAME" value="test.itemstore.ItemStoreTestCase" />
+      <option name="METHOD_NAME" value="t" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ItemStoreTestCase.searchBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.itemstore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ItemStore" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test.itemstore" />
+      <option name="MAIN_CLASS_NAME" value="test.itemstore.ItemStoreTestCase" />
+      <option name="METHOD_NAME" value="searchBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ItemStoreTestCase.searchBookOperationByID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.itemstore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ItemStore" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test.itemstore" />
+      <option name="MAIN_CLASS_NAME" value="test.itemstore.ItemStoreTestCase" />
+      <option name="METHOD_NAME" value="searchBookOperationByID" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -996,19 +1111,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ItemStoreTestCase.testCreateBook" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ItemStoreTestCase" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ItemStoreTestCase.testCheckDuplicateCreateBookName" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ItemStoreTestCase.testNotNullForBookFieldName" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ItemStoreTestCase.testNotNullForBookFieldAuthor" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ItemStoreTestCase" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ItemStoreTestCase.testNotNullForBookFieldAuthor" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ItemStoreTestCase.t" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ItemStoreTestCase.searchBook" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ItemStoreTestCase.searchBookOperationByID" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ItemStoreTestCase" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ItemStoreTestCase.testNotNullForBookFieldAuthor" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ItemStoreTestCase.testNotNullForBookFieldName" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ItemStoreTestCase.testCheckDuplicateCreateBookName" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ItemStoreTestCase.testCreateBook" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ItemStoreTestCase.searchBookOperationByID" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ItemStoreTestCase" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ItemStoreTestCase.searchBook" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ItemStoreTestCase.t" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ItemStoreTestCase.testNotNullForBookFieldAuthor" />
       </list>
     </recent_temporary>
   </component>
@@ -1025,44 +1140,47 @@
       <workItem from="1496337250917" duration="6489000" />
       <workItem from="1496579743764" duration="139000" />
       <workItem from="1496765937563" duration="7281000" />
-      <workItem from="1496857827051" duration="296000" />
+      <workItem from="1496857827051" duration="1180000" />
+      <workItem from="1496943592039" duration="2008000" />
+      <workItem from="1496945678077" duration="1849000" />
+      <workItem from="1496947580751" duration="1311000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ItemStoreTestCase - 2017.06.06 at 21h 41m 17s.xml">
-      <configuration name="ItemStoreTestCase" configurationId="JUnit" />
+    <history-entry file="ItemStoreTestCase_searchBook - 2017.06.08 at 21h 09m 07s.xml">
+      <configuration name="ItemStoreTestCase.searchBook" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ItemStoreTestCase - 2017.06.06 at 21h 42m 21s.xml">
-      <configuration name="ItemStoreTestCase" configurationId="JUnit" />
+    <history-entry file="ItemStoreTestCase_searchBook - 2017.06.08 at 21h 10m 12s.xml">
+      <configuration name="ItemStoreTestCase.searchBook" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ItemStoreTestCase - 2017.06.06 at 21h 45m 30s.xml">
-      <configuration name="ItemStoreTestCase" configurationId="JUnit" />
+    <history-entry file="ItemStoreTestCase_searchBook - 2017.06.08 at 21h 22m 23s.xml">
+      <configuration name="ItemStoreTestCase.searchBook" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ItemStoreTestCase - 2017.06.06 at 21h 46m 31s.xml">
-      <configuration name="ItemStoreTestCase" configurationId="JUnit" />
+    <history-entry file="ItemStoreTestCase_searchBook - 2017.06.08 at 21h 24m 58s.xml">
+      <configuration name="ItemStoreTestCase.searchBook" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ItemStoreTestCase - 2017.06.06 at 21h 53m 12s.xml">
-      <configuration name="ItemStoreTestCase" configurationId="JUnit" />
+    <history-entry file="ItemStoreTestCase_searchBook - 2017.06.08 at 21h 25m 29s.xml">
+      <configuration name="ItemStoreTestCase.searchBook" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ItemStoreTestCase - 2017.06.06 at 21h 53m 22s.xml">
-      <configuration name="ItemStoreTestCase" configurationId="JUnit" />
+    <history-entry file="ItemStoreTestCase_searchBookOperationByID - 2017.06.08 at 22h 03m 39s.xml">
+      <configuration name="ItemStoreTestCase.searchBookOperationByID" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ItemStoreTestCase - 2017.06.06 at 21h 54m 35s.xml">
-      <configuration name="ItemStoreTestCase" configurationId="JUnit" />
+    <history-entry file="ItemStoreTestCase_searchBookOperationByID - 2017.06.08 at 22h 06m 51s.xml">
+      <configuration name="ItemStoreTestCase.searchBookOperationByID" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ItemStoreTestCase - 2017.06.06 at 21h 55m 12s.xml">
-      <configuration name="ItemStoreTestCase" configurationId="JUnit" />
+    <history-entry file="ItemStoreTestCase_searchBookOperationByID - 2017.06.08 at 22h 07m 44s.xml">
+      <configuration name="ItemStoreTestCase.searchBookOperationByID" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ItemStoreTestCase - 2017.06.06 at 21h 56m 01s.xml">
-      <configuration name="ItemStoreTestCase" configurationId="JUnit" />
+    <history-entry file="ItemStoreTestCase_t - 2017.06.08 at 20h 59m 07s.xml">
+      <configuration name="ItemStoreTestCase.t" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ItemStoreTestCase_testNotNullForBookFieldAuthor - 2017.06.06 at 21h 40m 32s.xml">
-      <configuration name="ItemStoreTestCase.testNotNullForBookFieldAuthor" configurationId="JUnit" />
+    <history-entry file="ItemStoreTestCase_t - 2017.06.08 at 21h 01m 01s.xml">
+      <configuration name="ItemStoreTestCase.t" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14205000" />
+    <option name="totallyTimeSpent" value="20257000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1074,27 +1192,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
+    <frame x="54" y="-8" width="1320" height="784" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21904762" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5130568" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.281106" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23492064" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19920635" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26746032" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.021428572" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39938557" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.57757294" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1116,60 +1234,31 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/test/itemstore/ItemStoreTestCase.java</url>
+          <line>124</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="6" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="environment.getRequiredProperty(&quot;hibernate.hbm2ddl.import_files&quot;)" language="JAVA" custom="" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/itemstore/Instruments.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/domains/BookSupplyOperation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#654#655#0" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#716#717#0" expanded="true" />
-            <element signature="e#746#747#0" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#811#812#0" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
-            <element signature="e#937#938#0" expanded="true" />
-            <element signature="e#969#970#0" expanded="true" />
-            <element signature="e#1010#1011#0" expanded="true" />
-            <element signature="e#1041#1042#0" expanded="true" />
-            <element signature="e#1095#1096#0" expanded="true" />
-            <element signature="e#1135#1136#0" expanded="true" />
-            <element signature="e#1168#1169#0" expanded="true" />
-            <element signature="e#1196#1197#0" expanded="true" />
-            <element signature="e#1239#1240#0" expanded="true" />
-            <element signature="e#1273#1274#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/settings.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1177,9 +1266,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <element signature="e#160#161#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1188,7 +1274,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1197,9 +1283,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1208,7 +1292,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1765#1766#0" expanded="true" />
+            <element signature="e#1826#1827#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1217,9 +1302,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1235,9 +1318,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1253,9 +1334,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1264,7 +1343,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#1691#1692#0" expanded="true" />
+            <element signature="e#1746#1747#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1273,9 +1353,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1283,9 +1361,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1294,7 +1370,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1304,7 +1380,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1765#1766#0" expanded="true" />
+            <element signature="e#1826#1827#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1313,9 +1390,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1331,9 +1406,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1349,9 +1422,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1360,7 +1431,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#1691#1692#0" expanded="true" />
+            <element signature="e#1746#1747#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1369,9 +1441,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1379,9 +1449,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1390,7 +1458,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1409,27 +1477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.6.Final/hibernate-core-4.3.6.Final.jar!/org/hibernate/Session.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35695538">
-          <caret line="104" column="9" selection-start-line="104" selection-start-column="9" selection-end-line="104" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693">
-          <caret line="119" column="12" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37037036">
-          <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/PrimaryKeyJoinColumn.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3523316">
@@ -1437,62 +1484,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/23038624-4c89-44d1-9710-a5244de9b03a/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/itemstore/ItemStoreTestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/itemstore/Instruments.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/settings.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/services/ItemStoreServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/services/ItemStoreService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1505,36 +1500,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/domains/BookSupplyOperation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/domains/BookSupplier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/domains/BookOperationType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="e#135#136#0" expanded="true" />
-            <element signature="e#160#161#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1543,25 +1512,108 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/dao/ItemStoreDAOImpl.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/23038624-4c89-44d1-9710-a5244de9b03a/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.9230769">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/9f0158f8/23038624-4c89-44d1-9710-a5244de9b03a/hibernate-hello.book">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.6.Final/hibernate-core-4.3.6.Final.jar!/org/hibernate/Session.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35240275">
+          <caret line="140" column="11" selection-start-line="140" selection-start-column="11" selection-end-line="140" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/configuration/BeanConfigurator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/settings.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/domains/BookSupplier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/domains/BookSupplyOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/domains/BookConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/dao/ItemStoreDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/import_data.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <caret line="2" column="97" selection-start-line="2" selection-start-column="90" selection-end-line="2" selection-end-column="97" />
+          <folding>
+            <marker date="1496947138402" expanded="true" signature="139:281" placeholder="INSERT INTO `hibernate-hello`.`book_supplier`... " />
+            <marker date="1496947138402" expanded="true" signature="283:400" placeholder="INSERT INTO `hibernate-hello`.`book_supplier_operation`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/controllers/BookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1569,44 +1621,70 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/controllers/BookControllerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/controllers/BookController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/configuration/BeanConfigurator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <caret line="61" column="46" selection-start-line="61" selection-start-column="46" selection-end-line="61" selection-end-column="46" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1691#1692#0" expanded="true" />
+            <element signature="e#1746#1747#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/services/ItemStoreService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/dao/ItemStoreDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/dao/ItemStoreDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+          <folding>
+            <element signature="e#1765#1766#0" expanded="true" />
+            <element signature="e#1826#1827#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1923077">
+          <caret line="101" column="31" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/services/ItemStoreServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/configuration/ArchitectureConfiguaration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49117175">
-          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/itemstore/domains/BookConsumer.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/itemstore/ItemStoreTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24558587">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.5263158">
+          <caret line="122" column="9" selection-start-line="122" selection-start-column="9" selection-end-line="122" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>

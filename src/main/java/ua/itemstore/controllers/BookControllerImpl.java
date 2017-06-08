@@ -52,6 +52,16 @@ public class BookControllerImpl implements BookController {
         }
     }
 
+    @Override
+    public Book getBookByID(Long id) {
+        return itemStoreService.getBookByID(id);
+    }
+
+    @Override
+    public BookSupplyOperation getBookSupplyOperationByID(Long id) {
+        return itemStoreService.getBookSupplyOperationByID(id);
+    }
+
     private StatusEnum handleException(StatusEnum statusEnum, Throwable throwable){
         if (throwable == null){
             statusEnum.setError("");

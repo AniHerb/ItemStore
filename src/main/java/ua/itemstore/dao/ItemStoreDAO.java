@@ -18,4 +18,8 @@ public interface ItemStoreDAO {
     StatusEnum createBookConsumer(BookConsumer bookConsumer);
 
     StatusEnum createOperationBookSupply(BookSupplyOperation bookSupplyOperation);
+
+    Book getBookByID(Long id);
+
+    BookSupplyOperation getBookSupplyOperationByID(Long id);
 }

@@ -15,4 +15,7 @@ public interface BookController {
 
      StatusEnum createOperationBookSupply(BookSupplyOperation bookSupplyOperation);
 
+     Book getBookByID(Long id);
+
+     BookSupplyOperation getBookSupplyOperationByID(Long id);
 }

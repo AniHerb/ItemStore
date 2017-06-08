@@ -48,6 +48,15 @@ public class ItemStoreDAOImpl implements ItemStoreDAO {
         return StatusEnum.CREATED;
     }
 
+    @Override
+    public Book getBookByID(Long id) {
+        return (Book)sessionFactory.getCurrentSession().get(Book.class,id);
+    }
+
+    @Override
+    public BookSupplyOperation getBookSupplyOperationByID(Long id) {
+        return (BookSupplyOperation)sessionFactory.getCurrentSession().get(BookSupplyOperation.class,id);
+    }
 
     private <T> void persist(T t){
         sessionFactory.getCurrentSession().persist(t);

@@ -13,10 +13,7 @@ import org.springframework.test.context.support.AnnotationConfigContextLoader;
 import org.springframework.transaction.annotation.Transactional;
 import ua.itemstore.configuration.BeanConfigurator;
 import ua.itemstore.controllers.BookController;
-import ua.itemstore.domains.Book;
-import ua.itemstore.domains.BookConsumer;
-import ua.itemstore.domains.BookSupplyOperation;
-import ua.itemstore.domains.BookSupplier;
+import ua.itemstore.domains.*;
 import ua.itemstore.enums.StatusEnum;
 
 import java.util.Date;
@@ -114,5 +111,23 @@ public class ItemStoreTestCase {
         book.setAutuhors(null);
         StatusEnum statusEnum = bookController.createBook(book);
         Assert.assertEquals(statusEnum.getError(), StatusEnum.ERROR,statusEnum);
+    }
+
+    @Test
+    public void searchBookByID(){
+        Long id = 10000000L;
+        Book book = bookController.getBookByID(id);
+        Assert.assertNotNull("Book cannot be null!",book);
+    }
+
+    @Test
+    public void searchBookOperationByID(){
+        Long id = 2222222L;
+        BookSupplyOperation bookSupplyOperation = bookController.getBookSupplyOperationByID(id);
+        Assert.assertNotNull("BookOperation cannot be null! ",bookSupplyOperation);
+        Assert.assertNotNull("Book in BookOperation cannot be null!",
+                bookSupplyOperation.getBook());
+        Assert.assertNotNull("BookSupplier in BookOperation cannot be null!",
+                bookSupplyOperation.getSupplier());
     }
 }

@@ -8,6 +8,94 @@
     <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
     <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
       <schema id="1" name="hibernate-hello"/>
+      <table id="2" parent="1" name="book"/>
+      <table id="3" parent="1" name="book_supplier"/>
+      <table id="4" parent="1" name="book_supplier_operation"/>
+      <table id="5" parent="1" name="book_consumer"/>
+      <column id="6" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="7" parent="2" name="iosn">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="8" parent="2" name="autuhors">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="9" parent="2" name="date">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="10" parent="2" name="name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <index id="11" parent="2" name="UK_jf2wwikf3mrqafmbh015e0xnh">
+        <columns>name
+autuhors</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="12" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <key id="13" parent="2" name="UK_jf2wwikf3mrqafmbh015e0xnh">
+        <columns>name
+autuhors</columns>
+        <underlying-index>UK_jf2wwikf3mrqafmbh015e0xnh</underlying-index>
+      </key>
+      <column id="14" parent="3" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="15" parent="3" name="name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="16" parent="3" name="someInformation">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="17" parent="3" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="18" parent="4" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="19" parent="4" name="count">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="20" parent="4" name="date">
+        <data-type>datetime</data-type>
+      </column>
+      <key id="21" parent="4" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="22" parent="5" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="23" parent="5" name="email">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="24" parent="5" name="login">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="25" parent="5" name="name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="26" parent="5" name="password">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="27" parent="5" name="surname">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="28" parent="5" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
     </database-model>
   </data-source>
 </component>
