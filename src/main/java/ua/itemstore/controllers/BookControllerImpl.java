@@ -1,10 +1,7 @@
 package ua.itemstore.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import ua.itemstore.domains.Book;
-import ua.itemstore.domains.BookConsumer;
-import ua.itemstore.domains.BookSupplier;
-import ua.itemstore.domains.BookSupplyOperation;
+import ua.itemstore.domains.*;
 import ua.itemstore.enums.StatusEnum;
 import ua.itemstore.services.ItemStoreService;
 
@@ -60,6 +57,11 @@ public class BookControllerImpl implements BookController {
     @Override
     public BookSupplyOperation getBookSupplyOperationByID(Long id) {
         return itemStoreService.getBookSupplyOperationByID(id);
+    }
+
+    @Override
+    public StatusEnum createOperationBookConsumer(BookConsumerOperation bookConsumerOperation) {
+        return itemStoreService.createOperationBookConsumer(bookConsumerOperation);
     }
 
     private StatusEnum handleException(StatusEnum statusEnum, Throwable throwable){

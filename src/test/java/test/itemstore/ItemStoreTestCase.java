@@ -24,10 +24,10 @@ import java.util.Date;
 @ContextConfiguration(classes = BeanConfigurator.class, loader = AnnotationConfigContextLoader.class)
 public class ItemStoreTestCase {
 
-    //create cleaner dataBase
     //modify statuses
 
-
+    //todo Зробити, щоб при помилці заповнення даниих вивалювалась помилка при заповенні даних а не
+    // при виконання тесту
 
     @Autowired
     private BookController bookController;
@@ -71,7 +71,7 @@ public class ItemStoreTestCase {
 
     @Test
     @Transactional
-    public void testSupplyBook(){
+    public void testCreateSupplyBook(){
         Book book = Instruments.createBook();
         BookSupplier supplier = Instruments.createBookSupplier();
         BookSupplyOperation bookSupplyOperation = new BookSupplyOperation();
@@ -85,16 +85,18 @@ public class ItemStoreTestCase {
 
     @Test
     public void testCheckDuplicateCreateBookName(){
-        Book book = Instruments.createBook();
+        Book book = new Book();
+        //10000000,'{}','init_authors','2017-05-02','init_name'
+        book.setId(10000000l);
+        book.setIOSN("{}");
+        book.setDate(new Date());
+        book.setAutuhors("init_authors");
+        book.setName("init_name");
         StatusEnum statusEnum = bookController.createBook(book);
-        Assert.assertEquals(statusEnum.getError(), StatusEnum.CREATED,statusEnum);
-        book.setId(System.currentTimeMillis());
-        statusEnum = bookController.createBook(book);
         Assert.assertEquals(statusEnum.getError(), StatusEnum.ERROR,statusEnum);
     }
 
     @Test
-    @Transactional
     public void testNotNullForBookFieldName(){
         Book book = new Book();
         book.setName(null);
@@ -104,7 +106,6 @@ public class ItemStoreTestCase {
     }
 
     @Test
-    @Transactional
     public void testNotNullForBookFieldAuthor(){
         Book book = new Book();
         book.setName("");
@@ -130,4 +131,18 @@ public class ItemStoreTestCase {
         Assert.assertNotNull("BookSupplier in BookOperation cannot be null!",
                 bookSupplyOperation.getSupplier());
     }
+
+    @Test
+    public void createBookConsumerOperation(){
+        Book book = Instruments.createBook();
+        BookConsumer bookConsumers = Instruments.createBookConsumers();
+        BookConsumerOperation bookConsumerOperation = new BookConsumerOperation();
+        bookConsumerOperation.setDate(new Date());
+        bookConsumerOperation.setCount(10000);
+        bookConsumerOperation.setBook(book);
+        bookConsumerOperation.setBookConsumer(bookConsumers);
+        StatusEnum statusEnum = bookController.createOperationBookConsumer(bookConsumerOperation);
+        Assert.assertEquals(statusEnum.getError(), StatusEnum.CREATED,statusEnum);
+    }
+
 }

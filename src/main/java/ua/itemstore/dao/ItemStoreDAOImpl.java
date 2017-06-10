@@ -3,10 +3,7 @@ package ua.itemstore.dao;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import ua.itemstore.domains.Book;
-import ua.itemstore.domains.BookConsumer;
-import ua.itemstore.domains.BookSupplier;
-import ua.itemstore.domains.BookSupplyOperation;
+import ua.itemstore.domains.*;
 import ua.itemstore.enums.StatusEnum;
 
 import java.util.Set;
@@ -55,10 +52,20 @@ public class ItemStoreDAOImpl implements ItemStoreDAO {
 
     @Override
     public BookSupplyOperation getBookSupplyOperationByID(Long id) {
-        return (BookSupplyOperation)sessionFactory.getCurrentSession().get(BookSupplyOperation.class,id);
+        return getEntityByID(BookSupplyOperation.class,id);
+    }
+
+    @Override
+    public StatusEnum createOperationBookConsumer(BookConsumerOperation bookConsumerOperation) {
+        persist(bookConsumerOperation);
+        return StatusEnum.CREATED;
     }
 
     private <T> void persist(T t){
         sessionFactory.getCurrentSession().persist(t);
+    }
+
+    private <T> T getEntityByID(Class<?> clazz,Long id){
+        return (T)sessionFactory.getCurrentSession().get(clazz,id);
     }
 }

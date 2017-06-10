@@ -3,28 +3,32 @@ package ua.itemstore.domains;
 import javax.persistence.*;
 import java.util.Date;
 
+/**
+ * Created by xnx_ on 10.06.2017.
+ * Modified by pupkin on 10.11.2018
+ */
 @Entity
-@Table(name = "book_supplier_operation")
-public class BookSupplyOperation {
+@Table(name = "book_consumer_operation")
+public class BookConsumerOperation {
     @Id
     @Column(name = "id")
     private Long id;
-    @Column(name = "date")
-    private Date date;
 
     @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE} )
     @JoinColumn(name="book_id",nullable = false)
     private Book book;
 
     @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE} )
-    @JoinColumn(name="book_supplier_id",nullable = false)
-    private BookSupplier supplier;
+    @JoinColumn(name="book_consumer_id",nullable = false)
+    private BookConsumer bookConsumer;
 
+    @Column(name = "date")
+    private Date date;
 
     @Column(name = "count")
     private Integer count;
 
-    public BookSupplyOperation() {
+    public BookConsumerOperation() {
         this.id = System.currentTimeMillis();
     }
 
@@ -36,15 +40,6 @@ public class BookSupplyOperation {
         this.id = id;
     }
 
-
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
-
     public Book getBook() {
         return book;
     }
@@ -53,12 +48,20 @@ public class BookSupplyOperation {
         this.book = book;
     }
 
-    public BookSupplier getSupplier() {
-        return supplier;
+    public BookConsumer getBookConsumer() {
+        return bookConsumer;
     }
 
-    public void setSupplier(BookSupplier supplier) {
-        this.supplier = supplier;
+    public void setBookConsumer(BookConsumer bookConsumer) {
+        this.bookConsumer = bookConsumer;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
     }
 
     public Integer getCount() {

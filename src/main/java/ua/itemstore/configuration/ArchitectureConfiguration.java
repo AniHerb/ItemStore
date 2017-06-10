@@ -9,6 +9,8 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate4.HibernateTransactionManager;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBean;
+import org.springframework.security.config.annotation.ObjectPostProcessor;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
@@ -20,7 +22,7 @@ import org.springframework.core.env.Environment;
 @Configuration
 @EnableTransactionManagement
 @EnableAspectJAutoProxy
-public class ArchitectureConfiguaration {
+public class ArchitectureConfiguration {
 
     @Autowired
     private Environment environment;
@@ -62,4 +64,5 @@ public class ArchitectureConfiguaration {
         txManager.setSessionFactory(s);
         return txManager;
     }
+
 }

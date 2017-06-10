@@ -15,7 +15,7 @@ import ua.itemstore.services.ItemStoreServiceImpl;
 @Configuration
 @EnableTransactionManagement
 @EnableAspectJAutoProxy
-@Import(value = ArchitectureConfiguaration.class)
+@Import(value = {ArchitectureConfiguration.class,SecurityConfiguration.class})
 public class BeanConfigurator {
     @Bean
     public BookController newBookController(){

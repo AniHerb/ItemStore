@@ -1,6 +1,5 @@
 package ua.itemstore.domains;
 
-        import com.sun.istack.internal.NotNull;
 
         import javax.persistence.*;
         import java.util.Date;
@@ -15,7 +14,6 @@ public class Book {
     private Long id;
 
     @Column(name = "name",nullable = false)
-    @NotNull
     private String name;
 
     @Column(name = "date")
