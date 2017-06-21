@@ -1,16 +1,21 @@
 package ua.itemstore.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import ua.itemstore.domains.*;
 import ua.itemstore.enums.StatusEnum;
 import ua.itemstore.services.ItemStoreService;
 
+@RestController
 public class BookControllerImpl implements BookController {
 
     @Autowired
     private ItemStoreService itemStoreService;
 
-    public StatusEnum createBook(Book book) {
+    @RequestMapping("/createBook/{book}")
+    public StatusEnum createBook(@PathVariable Book book) {
         try {
             return itemStoreService.createBook(book);
         } catch (Exception e) {
@@ -55,7 +60,8 @@ public class BookControllerImpl implements BookController {
     }
 
     @Override
-    public BookSupplyOperation getBookSupplyOperationByID(Long id) {
+    @RequestMapping("/getBookByID/{id}")
+    public BookSupplyOperation getBookSupplyOperationByID(@PathVariable Long id) {
         return itemStoreService.getBookSupplyOperationByID(id);
     }
 

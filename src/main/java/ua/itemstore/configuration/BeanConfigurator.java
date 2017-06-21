@@ -4,7 +4,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.web.context.WebApplicationContext;
+import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import ua.itemstore.controllers.BookController;
 import ua.itemstore.controllers.BookControllerImpl;
 import ua.itemstore.dao.ItemStoreDAO;
@@ -31,4 +35,6 @@ public class BeanConfigurator {
     public ItemStoreDAO newItemStoreDAO(){
         return new ItemStoreDAOImpl();
     }
+
+
 }
