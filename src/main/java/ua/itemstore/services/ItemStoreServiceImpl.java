@@ -4,7 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import ua.itemstore.dao.ItemStoreDAO;
 import ua.itemstore.domains.*;
-import ua.itemstore.enums.StatusEnum;
+import ua.itemstore.exceptions.ByMoreThenExistItemException;
+
 
 import java.util.Set;
 
@@ -15,8 +16,18 @@ public class ItemStoreServiceImpl implements ItemStoreService{
     private ItemStoreDAO itemStoreDAO;
 
     @Override
-    public StatusEnum createBook(Book book) {
-        return itemStoreDAO.createBook(book);
+    public int createBook(Book book) {
+        //addBookToProductBalance(book);
+         itemStoreDAO.createBook(book);
+        addBookToProductBalance(book);
+        return 0;
+    }
+
+    private int addBookToProductBalance(Book book) {
+        ProductBalance productBalance = new ProductBalance();
+        productBalance.setBook(book);
+        productBalance.setCount(0);
+        return itemStoreDAO.createBookInProductBalance(productBalance);
     }
 
     @Override
@@ -31,17 +42,17 @@ public class ItemStoreServiceImpl implements ItemStoreService{
     }
 
     @Override
-    public StatusEnum createSupplier(BookSupplier bookSupplier) {
+    public int createSupplier(BookSupplier bookSupplier) {
         return itemStoreDAO.createSupplier(bookSupplier);
     }
 
     @Override
-    public StatusEnum createBookConsumer(BookConsumer bookConsumer) {
+    public int createBookConsumer(BookConsumer bookConsumer) {
         return itemStoreDAO.createBookConsumer(bookConsumer);
     }
 
     @Override
-    public StatusEnum createOperationBookSupply(BookSupplyOperation bookSupplyOperation) {
+    public int createOperationBookSupply(BookSupplyOperation bookSupplyOperation) {
         return itemStoreDAO.createOperationBookSupply(bookSupplyOperation);
     }
 
@@ -56,7 +67,22 @@ public class ItemStoreServiceImpl implements ItemStoreService{
     }
 
     @Override
-    public StatusEnum createOperationBookConsumer(BookConsumerOperation bookConsumerOperation) {
+    public int createOperationBookConsumer(BookConsumerOperation bookConsumerOperation) {
+        checkIfEnoughItem(bookConsumerOperation.getBook(),bookConsumerOperation.getCount());
+
         return itemStoreDAO.createOperationBookConsumer(bookConsumerOperation);
     }
+
+    @Override
+    public int deleteBook(Book b) {
+       return itemStoreDAO.deleteBook(b);
+    }
+
+    private void checkIfEnoughItem(Book book, Integer count) {
+        int countAllowToSell = itemStoreDAO.getCountBookToSell(book);
+        if (count > countAllowToSell)
+            throw new ByMoreThenExistItemException("Not enough books "+count+" to sale. allow to sell = "+countAllowToSell);
+
+    }
+
 }

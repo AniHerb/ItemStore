@@ -1,21 +1,23 @@
 package ua.itemstore.services;
 
 import ua.itemstore.domains.*;
-import ua.itemstore.enums.StatusEnum;
+
 
 public interface ItemStoreService {
-    StatusEnum createBook(Book book);
+    int createBook(Book book);
     boolean checkIfExistBook(Book book);
 
-    StatusEnum createSupplier(BookSupplier bookSupplier);
+    int createSupplier(BookSupplier bookSupplier);
 
-    StatusEnum createBookConsumer(BookConsumer bookConsumer);
+    int createBookConsumer(BookConsumer bookConsumer);
 
-    StatusEnum createOperationBookSupply(BookSupplyOperation bookSupplyOperation);
+    int createOperationBookSupply(BookSupplyOperation bookSupplyOperation);
 
     Book getBookByID(Long id);
 
     BookSupplyOperation getBookSupplyOperationByID(Long id);
 
-    StatusEnum createOperationBookConsumer(BookConsumerOperation bookConsumerOperation);
+    int createOperationBookConsumer(BookConsumerOperation bookConsumerOperation);
+
+    int deleteBook(Book b);
 }

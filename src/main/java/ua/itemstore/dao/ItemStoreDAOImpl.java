@@ -1,11 +1,18 @@
 package ua.itemstore.dao;
 
+import org.hibernate.Criteria;
+import org.hibernate.Query;
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Criterion;
+import org.hibernate.criterion.Restrictions;
+import org.springframework.beans.factory.access.BootstrapException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import ua.itemstore.domains.*;
-import ua.itemstore.enums.StatusEnum;
 
+
+import java.util.List;
 import java.util.Set;
 
 @Repository
@@ -17,9 +24,15 @@ public class ItemStoreDAOImpl implements ItemStoreDAO {
     private SessionFactory sessionFactory;
 
     @Override
-    public StatusEnum createBook(Book book) {
+    public int createBook(Book book) {
        persist(book);
-        return StatusEnum.CREATED;
+        return 0;
+    }
+
+    @Override
+    public int createBookInProductBalance(ProductBalance productBalance){
+        persist(productBalance);
+        return 0;
     }
 
     @Override
@@ -28,21 +41,21 @@ public class ItemStoreDAOImpl implements ItemStoreDAO {
     }
 
     @Override
-    public StatusEnum createSupplier(BookSupplier bookSupplier) {
+    public int createSupplier(BookSupplier bookSupplier) {
         persist(bookSupplier);
-        return StatusEnum.CREATED;
+        return 0;
     }
 
     @Override
-    public StatusEnum createBookConsumer(BookConsumer bookConsumer) {
+    public int createBookConsumer(BookConsumer bookConsumer) {
         persist(bookConsumer);
-        return StatusEnum.CREATED;
+        return 0;
     }
 
     @Override
-    public StatusEnum createOperationBookSupply(BookSupplyOperation bookSupplyOperation) {
+    public int createOperationBookSupply(BookSupplyOperation bookSupplyOperation) {
         persist(bookSupplyOperation);
-        return StatusEnum.CREATED;
+        return 0;
     }
 
     @Override
@@ -56,9 +69,27 @@ public class ItemStoreDAOImpl implements ItemStoreDAO {
     }
 
     @Override
-    public StatusEnum createOperationBookConsumer(BookConsumerOperation bookConsumerOperation) {
+    public int createOperationBookConsumer(BookConsumerOperation bookConsumerOperation) {
         persist(bookConsumerOperation);
-        return StatusEnum.CREATED;
+        return 0;
+    }
+
+    @Override
+    public int getCountBookToSell(Book book) {
+        ProductBalance currentProductBalance = getCurrentBanalce(book);
+        return currentProductBalance.getCount();
+    }
+
+    @Override
+    public int deleteBook(Book b) {
+
+        Session session = sessionFactory.getCurrentSession();
+        ProductBalance balance = getCurrentBanalce(b);
+        session.delete(balance);
+        Book entityBook = (Book) session.load(Book.class,b.getId());
+        session.delete(entityBook);
+
+        return 0;
     }
 
     private <T> void persist(T t){
@@ -68,4 +99,21 @@ public class ItemStoreDAOImpl implements ItemStoreDAO {
     private <T> T getEntityByID(Class<?> clazz,Long id){
         return (T)sessionFactory.getCurrentSession().get(clazz,id);
     }
+
+    public ProductBalance getCurrentBanalce(Book book) {
+        Session session = sessionFactory.getCurrentSession();
+        Criteria criteria = session.createCriteria(ProductBalance.class);
+        criteria.add(Restrictions.eq("book.id",book.getId()));
+        List<ProductBalance> list = criteria.list();
+        if (list.isEmpty()) return generateEmptyProductBalance(book);
+        else return list.get(0);
+    }
+
+    private ProductBalance generateEmptyProductBalance(Book book) {
+        ProductBalance res = new ProductBalance();
+        res.setBook(book);
+        res.setCount(0);
+        return res;
+    }
+
 }

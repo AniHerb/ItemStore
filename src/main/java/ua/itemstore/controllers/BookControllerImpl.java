@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import ua.itemstore.domains.*;
-import ua.itemstore.enums.StatusEnum;
 import ua.itemstore.services.ItemStoreService;
 
 @RestController
@@ -15,43 +14,29 @@ public class BookControllerImpl implements BookController {
     private ItemStoreService itemStoreService;
 
     @RequestMapping("/createBook/{book}")
-    public StatusEnum createBook(@PathVariable Book book) {
-        try {
+    public int createBook(@PathVariable Book book) {
             return itemStoreService.createBook(book);
-        } catch (Exception e) {
-            return handleException(StatusEnum.ERROR,e);
-        }
+
 
     }
 
     @Override
-    public StatusEnum createSupplier(BookSupplier bookSupplier) {
-        try {
+    public int createSupplier(BookSupplier bookSupplier) {
+
             return itemStoreService.createSupplier(bookSupplier);
-        } catch (Exception e) {
-            e.printStackTrace();
-            return handleException(StatusEnum.ERROR,e);
-        }
+
     }
 
     @Override
-    public StatusEnum createBookConsumer(BookConsumer bookConsumer) {
-        try {
+    public int createBookConsumer(BookConsumer bookConsumer) {
             return itemStoreService.createBookConsumer(bookConsumer);
-        } catch (Exception e) {
-            e.printStackTrace();
-            return handleException(StatusEnum.ERROR,e);
-        }
+
     }
 
     @Override
-    public StatusEnum createOperationBookSupply(BookSupplyOperation bookSupplyOperation) {
-        try {
-            return itemStoreService.createOperationBookSupply(bookSupplyOperation);
-        } catch (Exception e) {
-            e.printStackTrace();
-            return handleException(StatusEnum.ERROR,e);
-        }
+    public int createOperationBookSupply(BookSupplyOperation bookSupplyOperation) {
+        return itemStoreService.createOperationBookSupply(bookSupplyOperation);
+
     }
 
     @Override
@@ -66,26 +51,13 @@ public class BookControllerImpl implements BookController {
     }
 
     @Override
-    public StatusEnum createOperationBookConsumer(BookConsumerOperation bookConsumerOperation) {
+    public int createOperationBookConsumer(BookConsumerOperation bookConsumerOperation) {
         return itemStoreService.createOperationBookConsumer(bookConsumerOperation);
     }
 
-    private StatusEnum handleException(StatusEnum statusEnum, Throwable throwable){
-        if (throwable == null){
-            statusEnum.setError("");
-        }else{
-            throwable.printStackTrace();
-            statusEnum.setError(stackTraceToString(throwable));
-        }
-        return statusEnum;
+    @Override
+    public int deleteBook(Book b) {
+        return itemStoreService.deleteBook(b);
     }
 
-    private String stackTraceToString(Throwable e) {
-        StringBuilder sb = new StringBuilder();
-        for (StackTraceElement element : e.getStackTrace()) {
-            sb.append(element.toString());
-            sb.append("\n");
-        }
-        return sb.toString();
-    }
 }

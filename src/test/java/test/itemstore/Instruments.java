@@ -3,7 +3,7 @@ package test.itemstore;
 import ua.itemstore.domains.Book;
 import ua.itemstore.domains.BookConsumer;
 import ua.itemstore.domains.BookSupplier;
-import ua.itemstore.enums.StatusEnum;
+
 
 import java.util.Date;
 

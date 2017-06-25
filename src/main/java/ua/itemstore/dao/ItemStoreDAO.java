@@ -1,24 +1,30 @@
 package ua.itemstore.dao;
 
 import ua.itemstore.domains.*;
-import ua.itemstore.enums.StatusEnum;
+
 
 import java.util.Set;
 
 public interface ItemStoreDAO {
-    StatusEnum createBook(Book book);
+    int createBook(Book book);
+
+    int createBookInProductBalance(ProductBalance productBalance);
 
     Set<Book> getBooksByBook(Book book);
 
-    StatusEnum createSupplier(BookSupplier bookSupplier);
+    int createSupplier(BookSupplier bookSupplier);
 
-    StatusEnum createBookConsumer(BookConsumer bookConsumer);
+    int createBookConsumer(BookConsumer bookConsumer);
 
-    StatusEnum createOperationBookSupply(BookSupplyOperation bookSupplyOperation);
+    int createOperationBookSupply(BookSupplyOperation bookSupplyOperation);
 
     Book getBookByID(Long id);
 
     BookSupplyOperation getBookSupplyOperationByID(Long id);
 
-    StatusEnum createOperationBookConsumer(BookConsumerOperation bookConsumerOperation);
+    int createOperationBookConsumer(BookConsumerOperation bookConsumerOperation);
+
+    int getCountBookToSell(Book book);
+
+    int deleteBook(Book b);
 }
