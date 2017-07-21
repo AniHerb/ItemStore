@@ -4,6 +4,8 @@ import ua.itemstore.domains.*;
 
 
 public interface BookController {
+
+
      int createBook(Book book);
 
      int createSupplier(BookSupplier bookSupplier);
@@ -19,4 +21,6 @@ public interface BookController {
      int createOperationBookConsumer(BookConsumerOperation bookConsumerOperation);
 
      int deleteBook(Book b);
+
+     void createBookReturnOperation(BookReturnOperation bookReturnOperation);
 }

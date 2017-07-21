@@ -53,7 +53,9 @@ public class ItemStoreServiceImpl implements ItemStoreService{
 
     @Override
     public int createOperationBookSupply(BookSupplyOperation bookSupplyOperation) {
-        return itemStoreDAO.createOperationBookSupply(bookSupplyOperation);
+        itemStoreDAO.createOperationBookSupply(bookSupplyOperation);
+        itemStoreDAO.updateBookBalance(bookSupplyOperation);
+        return 0;
     }
 
     @Override
@@ -69,13 +71,17 @@ public class ItemStoreServiceImpl implements ItemStoreService{
     @Override
     public int createOperationBookConsumer(BookConsumerOperation bookConsumerOperation) {
         checkIfEnoughItem(bookConsumerOperation.getBook(),bookConsumerOperation.getCount());
-
         return itemStoreDAO.createOperationBookConsumer(bookConsumerOperation);
     }
 
     @Override
     public int deleteBook(Book b) {
        return itemStoreDAO.deleteBook(b);
+    }
+
+    @Override
+    public void createBookReturnOperation(BookReturnOperation bookReturnOperation) {
+        itemStoreDAO.createBookReturnOperation(bookReturnOperation);
     }
 
     private void checkIfEnoughItem(Book book, Integer count) {

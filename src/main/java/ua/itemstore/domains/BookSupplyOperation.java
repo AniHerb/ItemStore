@@ -12,11 +12,11 @@ public class BookSupplyOperation {
     @Column(name = "date")
     private Date date;
 
-    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE} )
+    @ManyToOne(cascade = {CascadeType.ALL, CascadeType.MERGE} )
     @JoinColumn(name="book_id",nullable = false)
     private Book book;
 
-    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE} )
+    @ManyToOne(cascade = {CascadeType.ALL, CascadeType.MERGE} )
     @JoinColumn(name="book_supplier_id",nullable = false)
     private BookSupplier supplier;
 

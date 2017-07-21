@@ -54,7 +54,8 @@ public class ItemStoreDAOImpl implements ItemStoreDAO {
 
     @Override
     public int createOperationBookSupply(BookSupplyOperation bookSupplyOperation) {
-        persist(bookSupplyOperation);
+        //persist(bookSupplyOperation);
+        save(bookSupplyOperation);
         return 0;
     }
 
@@ -70,7 +71,7 @@ public class ItemStoreDAOImpl implements ItemStoreDAO {
 
     @Override
     public int createOperationBookConsumer(BookConsumerOperation bookConsumerOperation) {
-        persist(bookConsumerOperation);
+        save(bookConsumerOperation);
         return 0;
     }
 
@@ -92,8 +93,24 @@ public class ItemStoreDAOImpl implements ItemStoreDAO {
         return 0;
     }
 
+    @Override
+    public void updateBookBalance(BookSupplyOperation operation) {
+        ProductBalance productBalance = getCurrentBanalce(operation.getBook());
+        productBalance.setCount(operation.getCount());
+        this.save(productBalance);
+    }
+
+    @Override
+    public void createBookReturnOperation(BookReturnOperation bookReturnOperation) {
+        save(bookReturnOperation);
+    }
+
     private <T> void persist(T t){
         sessionFactory.getCurrentSession().persist(t);
+    }
+
+    private <T> void save(T t){
+        sessionFactory.getCurrentSession().saveOrUpdate(t);
     }
 
     private <T> T getEntityByID(Class<?> clazz,Long id){

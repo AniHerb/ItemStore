@@ -95,8 +95,6 @@ public class ItemStoreTestCase {
         Book book = new Book();
         book.setName(null);
         bookController.createBook(book);
-
-
     }
 
     @Test(expected = Exception.class)
@@ -126,18 +124,6 @@ public class ItemStoreTestCase {
                 bookSupplyOperation.getSupplier());
     }
 
-    @Test
-    public void createBookConsumerOperation(){
-        Book book = Instruments.createBook();
-        BookConsumer bookConsumers = Instruments.createBookConsumers();
-        BookConsumerOperation bookConsumerOperation = new BookConsumerOperation();
-        bookConsumerOperation.setDate(new Date());
-        bookConsumerOperation.setCount(1);
-        bookConsumerOperation.setBook(book);
-        bookConsumerOperation.setBookConsumer(bookConsumers);
-        int res = bookController.createOperationBookConsumer(bookConsumerOperation);
-        Assert.assertEquals(res, 0);
-    }
 
     @Test
     @Transactional

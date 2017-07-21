@@ -13,18 +13,16 @@ public class BookControllerImpl implements BookController {
     @Autowired
     private ItemStoreService itemStoreService;
 
+
+
     @RequestMapping("/createBook/{book}")
     public int createBook(@PathVariable Book book) {
             return itemStoreService.createBook(book);
-
-
     }
 
     @Override
     public int createSupplier(BookSupplier bookSupplier) {
-
             return itemStoreService.createSupplier(bookSupplier);
-
     }
 
     @Override
@@ -58,6 +56,11 @@ public class BookControllerImpl implements BookController {
     @Override
     public int deleteBook(Book b) {
         return itemStoreService.deleteBook(b);
+    }
+
+    @Override
+    public void createBookReturnOperation(BookReturnOperation bookReturnOperation) {
+        itemStoreService.createBookReturnOperation(bookReturnOperation);
     }
 
 }

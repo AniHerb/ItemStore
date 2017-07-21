@@ -27,4 +27,8 @@ public interface ItemStoreDAO {
     int getCountBookToSell(Book book);
 
     int deleteBook(Book b);
+
+    void updateBookBalance(BookSupplyOperation book);
+
+    void createBookReturnOperation(BookReturnOperation bookReturnOperation);
 }

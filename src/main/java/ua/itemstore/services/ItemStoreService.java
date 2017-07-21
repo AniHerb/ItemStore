@@ -20,4 +20,6 @@ public interface ItemStoreService {
     int createOperationBookConsumer(BookConsumerOperation bookConsumerOperation);
 
     int deleteBook(Book b);
+
+    void createBookReturnOperation(BookReturnOperation bookReturnOperation);
 }
