@@ -31,4 +31,10 @@ public class ItemStoreTestIntegrationControllers {
                 .andExpect(status().isOk())
                 .andExpect(content().string(equalTo("Greetings from Spring Boot!")));
     }
+
+    @Test
+    public void createBookFromJOSON() throws Exception {
+        mvc.perform(MockMvcRequestBuilders.get("/createBook/{\"id\":999999999}").accept(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk());
+    }
 }

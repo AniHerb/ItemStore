@@ -23,4 +23,8 @@ public interface BookController {
      int deleteBook(Book b);
 
      void createBookReturnOperation(BookReturnOperation bookReturnOperation);
+
+     int createBookById(Long id);
+
+     String getAllBook();
 }
