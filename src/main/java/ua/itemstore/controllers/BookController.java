@@ -5,6 +5,7 @@ import ua.itemstore.domains.*;
 
 public interface BookController {
 
+     void printHello();
 
      int createBook(Book book);
 

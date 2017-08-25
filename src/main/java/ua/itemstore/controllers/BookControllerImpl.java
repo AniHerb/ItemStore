@@ -11,6 +11,12 @@ public class BookControllerImpl implements BookController {
     @Autowired
     private ItemStoreService itemStoreService;
 
+    @Override
+    @RequestMapping(value = "/rest",method = RequestMethod.GET)
+    public void printHello() {
+        System.out.println("Hello is working");
+    }
+
     @RequestMapping(value = "/createBook/{book}",method = RequestMethod.GET)
     public int createBook(@PathVariable Book book) {
             return itemStoreService.createBook(book);
@@ -33,12 +39,12 @@ public class BookControllerImpl implements BookController {
     }
 
     @Override
+    @RequestMapping("/getBookByID/{id}")
     public Book getBookByID(Long id) {
         return itemStoreService.getBookByID(id);
     }
 
     @Override
-    @RequestMapping("/getBookByID/{id}")
     public BookSupplyOperation getBookSupplyOperationByID(@PathVariable Long id) {
         return itemStoreService.getBookSupplyOperationByID(id);
     }
