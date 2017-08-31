@@ -14,7 +14,7 @@ public class BookControllerImpl implements BookController {
     @Override
     @RequestMapping(value = "/rest",method = RequestMethod.GET)
     public void printHello() {
-        System.out.println("Hello is working");
+        System.out.println("Hello is working1235678");
     }
 
     @RequestMapping(value = "/createBook/{book}",method = RequestMethod.GET)
@@ -39,7 +39,7 @@ public class BookControllerImpl implements BookController {
     }
 
     @Override
-    @RequestMapping("/getBookByID/{id}")
+    @RequestMapping("/getBookByID")
     public Book getBookByID(Long id) {
         return itemStoreService.getBookByID(id);
     }
@@ -75,7 +75,7 @@ public class BookControllerImpl implements BookController {
     @Override
     @RequestMapping(value = "/")
     public String getAllBook() {
-        return "Its working ";
+        return "Greetings from Spring Boot!";
     }
 
 }

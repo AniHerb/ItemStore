@@ -14,6 +14,8 @@ import org.springframework.orm.hibernate4.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import ua.itemstore.controllers.BookController;
 import ua.itemstore.controllers.BookControllerImpl;
+import ua.itemstore.controllers.Some;
+import ua.itemstore.controllers.SomeImpl;
 import ua.itemstore.dao.ItemStoreDAO;
 import ua.itemstore.dao.ItemStoreDAOImpl;
 import ua.itemstore.services.ItemStoreService;
@@ -83,6 +85,11 @@ public class BeanConfigurator {
         HibernateTransactionManager txManager = new HibernateTransactionManager();
         txManager.setSessionFactory(s);
         return txManager;
+    }
+
+    @Bean(name = "newSome")
+    public Some newSome(){
+        return new SomeImpl();
     }
 
 
