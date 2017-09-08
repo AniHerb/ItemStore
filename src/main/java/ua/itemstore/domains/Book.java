@@ -69,4 +69,39 @@ public class Book {
     public void setIOSN(String IOSN) {
         this.IOSN = IOSN;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Book book = (Book) o;
+
+        if (id != null ? !id.equals(book.id) : book.id != null) return false;
+        if (name != null ? !name.equals(book.name) : book.name != null) return false;
+        if (date != null ? !date.equals(book.date) : book.date != null) return false;
+        if (autuhors != null ? !autuhors.equals(book.autuhors) : book.autuhors != null) return false;
+        return IOSN != null ? IOSN.equals(book.IOSN) : book.IOSN == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (name != null ? name.hashCode() : 0);
+        result = 31 * result + (date != null ? date.hashCode() : 0);
+        result = 31 * result + (autuhors != null ? autuhors.hashCode() : 0);
+        result = 31 * result + (IOSN != null ? IOSN.hashCode() : 0);
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", date=" + date +
+                ", autuhors='" + autuhors + '\'' +
+                ", IOSN='" + IOSN + '\'' +
+                '}';
+    }
 }
